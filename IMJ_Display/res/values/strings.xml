@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">IMJ_Display</string>
+    <string name="action_settings">Settings</string>
+    <string name="confirm_message">レンタル取引が終了しました</string>
+    <string name="title_activity_offer_form">OfferFormActivity</string>
+    <string name="rental">レンタルする</string>
+
+    <string-array name="version">
+        <item>新作</item>
+        <item>準新作</item>
+        <item>一般作</item>
+    </string-array>
+    <string-array name="period">
+        <item>当日</item>
+        <item>1泊2日</item>
+        <item>2泊3日</item>
+        <item>3泊4日</item>
+        <item>7泊8日</item>
+    </string-array>
+
+    <string name="title_activity_rental_confirm">RentalConfirmActivity</string>
+    <string name="title_activity_dvd_information">DvdInformationActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+</resources>
