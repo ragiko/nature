@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Discription:</strong>
+  <%= @event.discription %>
+</p>
+
+<p>
+  <strong>Ivent date:</strong>
+  <%= @event.ivent_date %>
+</p>
+
+<p>
+  <strong>Budget:</strong>
+  <%= @event.budget %>
+</p>
+
+<p>
+  <strong>Departure place:</strong>
+  <%= @event.departure_place %>
+</p>
+
+<p>
+  <strong>Detail:</strong>
+  <%= @event.detail %>
+</p>
+
+<p>
+  <b>Image:</b>
+  <%= image_tag @event.image.to_s %>
+</p>
+
+
+<%= link_to 'Edit', edit_event_path(@event) %> |
+<%= link_to 'Back', events_path %>

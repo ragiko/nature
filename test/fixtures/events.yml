@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  discription: MyString
+  ivent_date: 2014-06-14
+  budget: 1
+  departure_place: MyString
+  detail: MyText
+
+two:
+  discription: MyString
+  ivent_date: 2014-06-14
+  budget: 1
+  departure_place: MyString
+  detail: MyText
