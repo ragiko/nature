@@ -1,0 +1,33 @@
+<h1>Home#index</h1>
+
+<br>
+<br>
+
+<h1>投稿 model</h1>
+<% cnt = 0 %>
+<% @posts.each do |post| %>
+	<% cnt += 1 %>	
+	<h2>投稿番号 <%= cnt %></h2>
+	<ul> 
+		<li>タイトル: <%= post.title %></li>
+		<li>内容: <%= post.body %></li>
+		<li>その他: <%= post.other %></li>
+	</ul>
+<% end %>
+
+<br>
+<br>
+
+<h1>イベント model</h1>
+<% cnt = 0 %>
+<% @events.each do |event| %>
+	<% cnt += 1 %>	
+	<h2>イベント番号 <%= cnt %></h2>
+	<ul>
+		<li>概要: <%= event.discription %></li>
+		<li>イベント時刻: <%= event.ivent_date %></li>
+		<li>出発場所: <%= event.budget %></li>
+		<li>出発地点: <%= event.departure_place %></li>
+		<li>詳細: <%= event.detail %></li>
+	</ul>
+<% end %>
