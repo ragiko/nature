@@ -1,8 +1,18 @@
 <!--  本カラム -->
 <section id="portfolio">
   <div class="container">
+    <center>
+      <h2>イベント<br></br></h2><br>
+      <button class="btn btn-lg btn-success">
+        <a href="/events/new">        
+          イベントを企画
+        </a>
+      </button>
+      
+    </center>
+    </br>
+    </br>
   	<div class="row">
-      <h2>イベント<br></br></h2>
       <% @events.each do |event| %>
         <div class="col-lg-3 portfolio-item">
             <a href=<%= "/events/#{event.id}" %> class="portfolio-link" >
@@ -13,12 +23,16 @@
                 </div>
                 <%= image_tag event.image.url, :class => "img-responsive" %>
             </a>
+            <p><%= event.discription %></p>
         </div>
        	<% end %>
     </div>
-    <div class="row" style="margin-top: 60px">
+
+    <center style="margin-top: 40px;">
+      <h2>記事<br></br></h2>
+    </center>
+    <div class="row">
         <div class="text-center">
-            <h2>記事<br></br></h2>
 						<% @posts.each do |post| %>
 		          <div class="col-lg-3 portfolio-item" style="margin-top: 35px">
 		            <a href=<%= "/posts/#{post.id}" %> class="portfolio-link">
@@ -29,6 +43,7 @@
 		                </div>
 		                <%= image_tag post.image.url, :class => "img-responsive" %>
 		            </a>
+                <p><%= post.title %></p>
 		        	</div>
      				 <% end %>
      		</div>

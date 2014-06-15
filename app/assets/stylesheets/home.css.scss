@@ -1,3 +1,22 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.portfolio-item p {
+	background: white;
+	padding: 15px;
+	font-size: 18px;
+	text-align: left;
+}
+
+.container > center > h2 {
+	display: -webkit-inline-box;
+	line-height: 0.5;
+	border-bottom: solid 6px #18BC9C;
+	margin-bottom: 30px;	
+	text-align: center;
+}
+
+.container > center > button > a {
+	color: white;
+}
