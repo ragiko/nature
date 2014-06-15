@@ -1,3 +1,35 @@
 // Place all the styles related to the login controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.name {
+	margin-bottom: 53px;
+}
+
+#facebook-login {
+	margin-top: 70px;
+	img {
+		display: inline;
+		width: 25px;
+		padding-top: 12px;
+		margin-right: 15px;
+	}
+}
+
+.explain p {
+	margin-top: 10px;
+}
+
+.section1-right {
+	margin-top: 60px;
+}
+
+.container-wrap {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#container-wrap1,
+#container-wrap3 {
+	background-color: #edeff1;
+}
