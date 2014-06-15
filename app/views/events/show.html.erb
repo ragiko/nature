@@ -1,5 +1,109 @@
 <p id="notice"><%= notice %></p>
 
+<!-- Begin Body -->
+<div class="container">
+  <div class="row">
+    <div class="panel">
+      <div class="panel-body">
+        <h1>【本日深夜０時！！】高尾山で地球を感じる！</h1>
+      </div>
+    </div>
+    <div class="col col-sm-12">
+      <div class="panel">
+        <!-- コンテントトップフレーム -->
+        <div class="row content-main">
+          <div class="col col-sm-12">
+            <!-- コンテント写真 -->
+            <%= image_tag @event.image.to_s %>
+          </div> 
+        </div>
+        <h2>高尾山の自然に浸る。驚異の地球を体感せよ！</h2>
+        <p>高尾山は、東京都八王子市にある標高599mの山である。東京都心から近く、年間を通して多くの観光客や登山者が訪れる。古くから修験道の霊山とされた。</p>
+      </div> 
+    </div>
+  </div>
+
+  <!-- ２つ目カラム開始 -->
+  <div class="row">
+    <div class="col col-sm-12">
+      <div class="panel">
+        <br>
+        <h4>ここが魅力！</h4>
+        <hr>
+        <p>高尾山は、東京都八王子市にある標高599mの山である。東京都心から近く、年間を通して多くの観光客や登山者が訪れる。古くから修験道の霊山とされた。</p>
+        <br>
+      </div>
+    </div> 
+  </div>
+
+  <!-- ３つ目カラム開始 -->
+  <div class="row">
+    <div class="col col-sm-12">
+      <div class="panel">
+        　
+        　<!--table要素-->          
+        　　<h4 style="text-color:#bbb;">イベント詳細</h4>
+
+        　　<div class="cont-table" style="margin-top:-25px;"> 
+         　　　  <table class="table table-bordered table-hover">
+          　　　<!-- <thead><tr><th>日程</th><th>Score</th></tr></thead> -->
+          <tbody>
+            <tr><td>日程</td><td>2014/06/14</td></tr>
+            <tr><td>予算</td><td>¥1,000</td></tr>
+            <tr><td>出発地</td><td>京王線高尾山口駅</td></tr>  
+            <tr><td>現在の状況</td><td>12人</td></tr>
+          </tbody>
+        　　　　 </table>
+      　　　　  　</div>          
+    </div>
+  </div> 
+</div>
+
+<!-- ４つ目カラム開始 -->
+
+   <div class="row">
+      <div class="col col-sm-12">
+          <div class="panel" style="overflow:hidden;">
+    　
+           <h4>参加予定者一覧</h4>
+
+             <div class="samnail">
+             <img src="img/testimg.jpg" style="width:100%;"/>
+               <p style="text-align:center;">name</p>
+  　         </div>
+
+             <div class="samnail">
+              <img src="img/testimg.jpg" style="width:100%; height:auto;"/> 
+               <p style="text-align:center;">name</p>
+  　         </div>
+
+             <div class="samnail">
+              <img src="img/testimg.jpg" style="width:100%; height:auto;"/> 
+               <p style="text-align:center;">name</p>
+  　         </div>
+
+             <div class="samnail">
+             <img src="img/testimg.jpg" style="width:100%;"/>
+               <p style="text-align:center;">name</p>
+  　         </div>
+
+             <div class="samnail">
+              <img src="img/testimg.jpg" style="width:100%; height:auto;"/> 
+               <p style="text-align:center;">name</p>
+  　         </div>
+             <div class="samnail">
+              <img src="img/testimg.jpg" style="width:100%; height:auto;"/> 
+               <p style="text-align:center;">name</p>
+  　         </div>
+  
+      </div><!-- panel -->
+   </div> 
+ </div>
+
+</div><!-- class container -->
+
+
+
 <p>
   <strong>Discription:</strong>
   <%= @event.discription %>

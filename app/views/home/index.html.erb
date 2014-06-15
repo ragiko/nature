@@ -74,15 +74,15 @@
            
     <!-- artcol -->
     	<div class="row artcol">
-    		<% @events.each do |event| %>
+    		<% @posts.each do |post| %>
 	            <div class="col-sm-6 portfolio-item">
-	                <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+	                <a href=<%= "/posts/#{post.id}" %> class="portfolio-link">
 	                    <div class="caption">
 	                        <div class="caption-content">
 	                            <i class="fa fa-search-plus fa-3x"></i>
 	                        </div>
 	                    </div>
-	                    <%= image_tag event.image.url, :class => "img-responsive" %>
+	                    <%= image_tag post.image.url, :class => "img-responsive" %>
 	                </a>
 	            </div>
 	        <% end %>
@@ -90,15 +90,15 @@
 
 <!-- Eventcol -->
         <div class="row eventcol">
-        	<% @posts.each do |post| %>
+        	<% @events.each do |event| %>
 	            <div class="col-sm-6 portfolio-item">
-	                <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+	                <a href=<%= "/events/#{event.id}" %> class="portfolio-link" >
 	                    <div class="caption">
 	                        <div class="caption-content">
 	                            <i class="fa fa-search-plus fa-3x"></i>
 	                        </div>
 	                    </div>
-	                    <%= image_tag post.image.url, :class => "img-responsive" %>
+	                    <%= image_tag event.image.url, :class => "img-responsive" %>
 	                </a>
 	            </div>
            	<% end %>
