@@ -8,7 +8,7 @@
                     <!-- <hr class="star-light"> -->
                     <span class="skills">Natureにログインして自然と触れ合おう</span>
                     <div id="facebook-login">
-                        <a href="">
+                        <a href="<%= user_omniauth_authorize_path(:facebook) %>">
                             <button type="submit" class="btn btn-lg btn-success">
                                 <img src="https://trippiece.com/images/icon_facebook.png" pagespeed_url_hash="2770689458">
                                 Facebookで新規登録／ログイン
@@ -20,7 +20,6 @@
         </div>
     </div>
 </header>
-<h2><%= link_to "facebookでログイン", user_omniauth_authorize_path(:facebook) %></h2>
 
 <div id="container-wrap1" class="container-wrap">
     <div class="container">

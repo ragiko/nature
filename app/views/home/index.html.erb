@@ -1,167 +1,38 @@
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#page-top">Start Bootstrap</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#about">About</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <!-- <img class="img-responsive" src="img/profile.png" alt=""> -->
-                    <div class="intro-text">
-                        <span class="name">東京ハッカソン</span>
-                        <!-- <hr class="star-light"> -->
-                        <span class="skills">Event Attending Site</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!--  本カラム -->
-    <section id="portfolio">
-        <div class="container"
-            <div class="row">
-                
-                <div class="col-lg-6 text-center">
-                    <h2>記事<br></br></h2>
-                   <!--  <hr class="star-primary"> -->
-                </div>
-
-                <div class="col-lg-6 text-center">
-                    <h2>イベント<br></br></h2>
-                <!--     <hr class="star-primary"> -->
-                </div>
-            </div>
-
-           
-    <!-- artcol -->
-    	<div class="row artcol">
-    		<% @posts.each do |post| %>
-	            <div class="col-sm-6 portfolio-item">
-	                <a href=<%= "/posts/#{post.id}" %> class="portfolio-link">
-	                    <div class="caption">
-	                        <div class="caption-content">
-	                            <i class="fa fa-search-plus fa-3x"></i>
-	                        </div>
-	                    </div>
-	                    <%= image_tag post.image.url, :class => "img-responsive" %>
-	                </a>
-	            </div>
-	        <% end %>
-	    </div>
-
-<!-- Eventcol -->
-        <div class="row eventcol">
-        	<% @events.each do |event| %>
-	            <div class="col-sm-6 portfolio-item">
-	                <a href=<%= "/events/#{event.id}" %> class="portfolio-link" >
-	                    <div class="caption">
-	                        <div class="caption-content">
-	                            <i class="fa fa-search-plus fa-3x"></i>
-	                        </div>
-	                    </div>
-	                    <%= image_tag event.image.url, :class => "img-responsive" %>
-	                </a>
-	            </div>
-           	<% end %>
-        </div>
-
-
-
-        </div>
-    </section>
-<!-- 
-    <section class="success" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>About</h2>
-                    <hr class="star-light">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
-                </div>
-                <div class="col-lg-4">
-                    <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
-                </div>
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a href="#" class="btn btn-lg btn-outline">
-                        <i class="fa fa-download"></i> Download Theme
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Contact Me<br></br></h2>
-                    <!-- <hr class="star-primary"> -->
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <form role="form">
-                        <div class="row">
-                            <div class="form-group col-xs-12 floating-label-form-group">
-                                <label for="name">Name</label>
-                                <input class="form-control" type="text" name="name" placeholder="Name">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="form-group col-xs-12 floating-label-form-group">
-                                <label for="email">Email Address</label>
-                                <input class="form-control" type="email" name="email" placeholder="Email Address">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="form-group col-xs-12 floating-label-form-group">
-                                <label for="message">Message</label>
-                                <textarea placeholder="Message" class="form-control" rows="5"></textarea>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="row">
-                            <div class="form-group col-xs-12">
-                                <button type="submit" class="btn btn-lg btn-success">Send</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+<!--  本カラム -->
+<section id="portfolio">
+  <div class="container">
+    <div class="row">
+        <div class="col-lg-6 text-center">
+            <h2>記事<br></br></h2>
+						<% @posts.each do |post| %>
+		          <div class="col-lg-6 portfolio-item" style="margin-top: 35px">
+		            <a href=<%= "/posts/#{post.id}" %> class="portfolio-link">
+		                <div class="caption">
+		                    <div class="caption-content">
+		                        <i class="fa fa-search-plus fa-3x"></i>
+		                    </div>
+		                </div>
+		                <%= image_tag post.image.url, :class => "img-responsive" %>
+		            </a>
+		        	</div>
+     				 <% end %>
+     		</div>
+		    <div class="col-lg-6 text-center">
+		        <h2>イベント<br></br></h2>
+		        <% @events.each do |event| %>
+		          <div class="col-lg-6 portfolio-item">
+		              <a href=<%= "/events/#{event.id}" %> class="portfolio-link" >
+		                  <div class="caption">
+		                      <div class="caption-content">
+		                          <i class="fa fa-search-plus fa-3x"></i>
+		                      </div>
+		                  </div>
+		                  <%= image_tag event.image.url, :class => "img-responsive" %>
+		              </a>
+		          </div>
+		       	<% end %>
+		    </div>
+    </div>
+   </div>
+</section>
 
