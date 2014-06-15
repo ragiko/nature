@@ -21,7 +21,6 @@ $(function() {
 	              '<img src="/assets/ito.jpg" style="width:100%;"/>' +
 	              '<p style="text-align:center;">ito</p>' +
 	            '</div>';
-	　         
 		$(".user").last().after(s);
 
 	});
