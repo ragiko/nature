@@ -1,0 +1,15 @@
+.artcol{
+	width:45%;
+	margin-right: 10px;
+	margin-left: 10px;
+	float: left;
+	text-align: center;
+}
+
+.eventcol{
+	width:45%;
+	margin-right: 10px;
+	margin-left: 10px;
+	text-align: center;
+    float: right;
+}

@@ -7,6 +7,7 @@ Nature::Application.routes.draw do
     get 'sign_in', :to => 'devise/sessions#new', :as => :new_user_session
   end
   root :to => "home#index"
+  get 'home/index'
   resources :events
   resources :posts
 
