@@ -1,4 +1,6 @@
-<%= form_for(@post) do |f| %>
+<%= stylesheet_link_tag "bootstrap", :media => "all" %>
+
+<%= form_for @post ,:html => {:class => "form-horizontal"} do |f| %>
   <% if @post.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h2>
@@ -11,23 +13,44 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
+
+<form class="form-horizontal" role="form">
+  <div class="form-group">
+    <%= f.label 'イベントタイトル', :class =>"col-sm-2 control-label", :align => "right" %>
+    <div class="col-sm-5">
+      <%= f.text_field :title, :class => "form-control" %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :body %><br>
-    <%= f.text_area :body %>
+  <div class="form-group">
+    <%= f.label 'イベント内容 : ', :class =>"col-sm-2 control-label" %>
+    <div class="col-sm-5">
+      <%= f.text_area :body, :class => "form-control",:rows => "4" %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :other %><br>
-    <%= f.text_area :other %>
+  <div class="form-group">
+    <%= f.label '写真 : ', :class =>"col-sm-2 control-label", :align => "right" %>
+    <div class="col-sm-2">
+      <input id="uploadFile" placeholder="Choose File" disabled="disabled" class ="form-control" />
+    </div>
+    <div class="fileUpload btn btn-primary">
+      <span>Upload</span>
+      <%= f.file_field :image, :class => "upload", :id => "uploadBtn" %>
+
+    </div>
   </div>
-  <div>
-    <%= f.label :image %>
-    <%= f.file_field :image %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
+
+  <div class="form-group">
+    <div class="actions col-sm-offset-2 col-sm-5">
+      <center>
+        <%= f.submit '記入完了', :class => 'btn btn-primary'%>
+      </center>
+    </div>
   </div>
 <% end %>
+
+
+<script type="text/javascript">
+  document.getElementById("uploadBtn").onchange = function () {
+    document.getElementById("uploadFile").value = this.value;
+  };
+</script>
