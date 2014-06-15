@@ -15,9 +15,14 @@
 //= require turbolinks
 //= require_tree .
 
-$(function () {
+$(function() {
 	$(".plus").click(function() {
-		console.log(1);
+		var s = 	'<div class="samnail">' +
+	              '<img src="/assets/ito.jpg" style="width:100%;"/>' +
+	              '<p style="text-align:center;">ito</p>' +
+	            '</div>';
+	　         
+		$(".user").last().after(s);
 
 	});
 });
