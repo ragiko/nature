@@ -1,13 +1,15 @@
 Nature::Application.routes.draw do
 
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
-
-  get 'login/index'
   devise_scope :user do
     get 'sign_in', :to => 'devise/sessions#new', :as => :new_user_session
   end
-  root :to => "home#index"
+
+  root :to => "login#index"
+
+  get 'login/index'
   get 'home/index'
+
   resources :events
   resources :posts
 
