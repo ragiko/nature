@@ -2,16 +2,16 @@
 
 <!-- Begin Body -->
 <div class="container">
-  <div class="col col-sm-9">
+  <div class="col col-sm-12">
     <div class="panel">
       <div align="left" style="margin-left:200px;">
         <h2><%= @post.title %></h2>
-        <hr width=200 align=left color=black>
+        <hr align=left color=black>
       </div>
       <div align="left" style="margin-left:200px;">
         <div class="row">
           <div class="col col-sm-8">
-            <%= image_tag @post.image.to_s %>
+            <%= image_tag @post.image.to_s,:width => "100%" %>
           </div>  
         </div>
       </div>

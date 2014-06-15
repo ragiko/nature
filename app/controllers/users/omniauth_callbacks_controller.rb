@@ -7,7 +7,7 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
       flash[:notice] = I18n.t "devise.omniauth_callbacks.success", :kind => "Facebook"
       logger.debug("found")
       # sign_in_and_redirect @user, :event => :authentication
-      redirect_to root_path
+      redirect_to home_index_path
     else
       session["devise.facebook_data"] = request.env["omniauth.auth"]
       logger.debug("not")

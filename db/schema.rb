@@ -14,6 +14,7 @@
 ActiveRecord::Schema.define(version: 20140614130131) do
 
   create_table "events", force: true do |t|
+    t.string   "title"
     t.string   "discription"
     t.date     "ivent_date"
     t.integer  "budget"
